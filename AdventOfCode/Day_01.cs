@@ -2,11 +2,11 @@
 
 public class Day_01 : BaseDay
 {
-    private readonly string _input;
+    private readonly string input;
 
     public Day_01()
     {
-        _input = File.ReadAllText(InputFilePath);
+        input = File.ReadAllText(InputFilePath);
     }
 
     public override ValueTask<string> Solve_1() => new($"{SolvePartOne()}");
@@ -18,7 +18,7 @@ public class Day_01 : BaseDay
     public int SolvePartOne()
     {
         int floor = 0;
-        foreach (char x in _input)
+        foreach (char x in input)
         {
             if (x == '(')
             {
@@ -35,7 +35,7 @@ public class Day_01 : BaseDay
 public int SolvePartTwo()
     {
         int floor = 0;
-        foreach (var x in _input.Select((ch,index) => (ch, index)))
+        foreach (var x in input.Select((ch,index) => (ch, index)))
         {
             if (x.ch == '(')
             {

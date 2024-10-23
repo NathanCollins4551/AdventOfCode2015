@@ -2,11 +2,11 @@
 
 public class Day_02 : BaseDay
 {
-    private readonly string _input;
+    private readonly string input;
 
     public Day_02()
     {
-        _input = File.ReadAllText(InputFilePath);
+        input = File.ReadAllText(InputFilePath);
     }
 
     public override ValueTask<string> Solve_1() => new($"{SolvePartOne()}");
@@ -17,7 +17,7 @@ public class Day_02 : BaseDay
 
     public int SolvePartOne()
     {
-        return _input
+        return input
             .Split('\n')
             .Where(dimensions => dimensions.Length > 0)
             .Select(dimensions => dimensions.Split('x')
@@ -32,7 +32,7 @@ public class Day_02 : BaseDay
 
     public int SolvePartTwo()
     {
-        return _input
+        return input
             .Split('\n')
             .Where(dimensions => dimensions.Length > 0)
             .Select(dimensions => dimensions.Split('x')
@@ -44,10 +44,5 @@ public class Day_02 : BaseDay
             })
             .Sum();
     }
-
-
-
-
-
 }
 
