@@ -1,7 +1,4 @@
-﻿using System.Security.Cryptography;
-using System.Text;
-
-namespace AdventOfCode;
+﻿namespace AdventOfCode;
 
 public class Day_05 : BaseDay
 {
