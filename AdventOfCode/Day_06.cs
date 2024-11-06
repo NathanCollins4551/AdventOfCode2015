@@ -166,12 +166,13 @@ public class Day_06 : BaseDay
         }
         return totalBrightness;
     }
+    enum Command
+    {
+        ON,
+        OFF,
+        TOGGLE
+    }
 }
 
-enum Command
-{
-    ON,
-    OFF,
-    TOGGLE
-}
+
 
