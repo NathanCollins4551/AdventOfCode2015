@@ -40,6 +40,7 @@ public class Day_07 : BaseDay
     public int getValue(string target, string prev)
     {
         //Console.WriteLine(target);
+
         //if number, add to values list and return number
         if (int.TryParse(target, out int num))
         {
